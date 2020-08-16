@@ -1,0 +1,20 @@
+{
+  "name": "pwa-boilerplate",
+  "version": "1.0.0",
+  "description": "A basic boilerplate project for PWA applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pwa",
+    "boilerplate",
+    "progressive",
+    "web",
+    "app",
+    "web",
+    "app"
+  ],
+  "author": "adriansandaker",
+  "license": "ISC"
+}
