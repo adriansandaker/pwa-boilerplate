@@ -13,9 +13,9 @@ The application manifest has a wide range of available properties, some of which
 ### Icons
 In PWA development, the icons play an important role in ensuring installability and compliance with the requirements for Progressive Web Apps. 
 
-For Android devices, you will need to provide icons in the resolutions *512x512* and *192x192*. However, it is a best practice to also include a wider range of sizes. See the ```/icons``` folder for an example of various resolutions.
+For Android devices, you will need to provide icons in the resolutions *512x512* and *192x192*. However, it is a best practice to also include a wider range of sizes. See the ```/icons``` folder for an example of various resolutions. Android icons are set in the ```manifest.webmanifest``` file.
 
-For iOS devices, you need to provide icons in the resolutions *180x180* and *120x120*. These must be linked in the HTML using the link tag with ```rel=apple-touch-icon```. See example below.
+For iOS devices you will typically provide icons in the resolutions *180x180* and *120x120*. These must be linked in the HTML using the link tag with ```rel=apple-touch-icon```. See example below.
     
     <link rel="apple-touch-icon" href="icons/icon-120.png" sizes="120x120">
     <link rel="apple-touch-icon" href="icons/icon-180.png" sizes="180x180">  

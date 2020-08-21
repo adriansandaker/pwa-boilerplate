@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>PWA Boilerplate</title>
+
   <meta name="apple-mobile-web-app-title" content="PWA Boilerplate">
   <meta name="description" content="A PWA boilerplate to help you get started quickly.">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -31,10 +32,18 @@
 
 <body>
   <div class="app-container">
-    <header class="jumbotron">
-      <h1 class="display-4">PWA Boilerplate</h1>
+    <header class="header">
+      <h1><span role="img" aria-label="App emoji logo">📦</span>PWA Boilerplate</h1>
     </header>
-    <p>This project contains a basic starting point for a Progressive Web Application.</p>
+    <main class="app-content">
+      <p>This project contains a basic starting point for a Progressive Web Application.</p>
+      <section>
+        <h3>Notifications</h3>
+        <p>Write a text below and see it appear in a notification.</p>
+        <input id="input-notification" />
+      </section>
+      <button id="button-notification">Show notification.</button>
+    </main>
   </div>
   <script src="index.js" async defer></script>
 </body>
