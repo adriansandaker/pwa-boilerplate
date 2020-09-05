@@ -1,7 +1,6 @@
 // The name used for cache in browser.
 const CACHE_NAME = 'app-cache';
 
-
 /* Serve cached content if offline. If not, download and refresh cache.
    This is known as the 'stale while revalidate' pattern. */
 self.addEventListener('fetch', function (event) {
@@ -9,7 +8,9 @@ self.addEventListener('fetch', function (event) {
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.match(event.request).then(function (response) {
         var fetchPromise = fetch(event.request).then(function (networkResponse) {
-          cache.put(event.request, networkResponse.clone());
+          if(!networkResponse.url.includes('sockjs-node')) {
+            cache.put(event.request, networkResponse.clone());
+          }
           return networkResponse;
         })
         return response || fetchPromise;

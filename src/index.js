@@ -1,6 +1,8 @@
 import './styles.css';
 import swUtils from './utils/swUtils';
 
+const notificationButton = document.getElementById('button-notification');
+
 async function initApp() {
   await swUtils.setupServiceWorker();
 
@@ -9,16 +11,17 @@ async function initApp() {
   }
 }
 
-document.getElementById('button-notification').addEventListener('click', event => {
+notificationButton.addEventListener('click', event => {
   navigator.serviceWorker.getRegistration().then(reg => {
-    const notificationText = document.getElementById('input-notification').value;
-    reg.showNotification('Hi there!',
-      {
-        body: notificationText ? notificationText : 'Write something in the input field!',
-        icon: 'icons/icon-96.png'
-      }
+    const text = document.getElementById('input-notification').value;
+    reg.showNotification(
+        'Hi there!',
+        {
+          body: text ? text : 'Write something in the input field!',
+          icon: 'icons/icon-96.png',
+        },
     );
-  })
+  });
 });
 
 initApp();

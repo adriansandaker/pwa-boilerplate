@@ -4,19 +4,19 @@ const DEBUG_TAG = '[SW]';
 async function setupServiceWorker() {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./service-worker.js')
-      .then(() => {
-        console.log(DEBUG_TAG, 'Service worker registered.')
-      })
-      .catch(() => {
-        console.log(DEBUG_TAG, 'Error: Unable to register service-worker.')
-      })
-    }
+        .then(() => {
+          console.log(DEBUG_TAG, 'Service worker registered.');
+        })
+        .catch(() => {
+          console.log(DEBUG_TAG, 'Error: Unable to register service-worker.');
+        });
+  }
 }
 
 async function checkNotificationSupport() {
   if (!('Notification' in window)) {
-      console.log('This browser does not support notifications.');
-    };
+    console.log('This browser does not support notifications.');
+  };
 }
 
 async function requestNotificationPermission() {
@@ -34,4 +34,4 @@ export default {
   setupServiceWorker,
   checkNotificationSupport,
   requestNotificationPermission,
-}
+};
