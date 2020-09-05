@@ -1,8 +1,23 @@
-# PWA Boilerplate 
+# 📦 PWA Boilerplate 
+
+## Project summary.
 
 This repository contains a boilerplate project with the basic components of a Progressive Web App. This includes the essential parts such as the *manifest* and the *service-worker* files. In addition you will find examples of matters like PWA-related media queries and lesser known HTML tags.
 
+The project is setup with webpack and babel to enable use of modern syntax.
+
 I created this mainly with my own personal use in mind, but you are more than welcome to clone the repo and use it as a foundation for your own projects.
+
+## Getting started
+
+To get started for local development run the following commands:
+
+```
+  npm install
+  npm start
+```
+
+Then go to ```http://localhost:8080``` to see the app.
 
 ## Service Worker
 The ```service-worker.js``` file contains the bare essentials of functionality for PWA use. This includes registering of the service worker itself, as well as some basic offline caching of resources. For large scale projects, consider using a tool like [Workbox](https://developers.google.com/web/tools/workbox) to simplify the development process.
