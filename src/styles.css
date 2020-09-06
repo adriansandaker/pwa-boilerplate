@@ -1,3 +1,8 @@
+section {
+  margin: 16px;
+}
+
+
 /*  Setting the safe areas using env with fallback value as second param.
     https://developer.mozilla.org/en-US/docs/Web/CSS/env */
 .app-container {

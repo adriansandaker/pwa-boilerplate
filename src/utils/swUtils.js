@@ -1,3 +1,7 @@
+/*
+ *    Various PWA/SW related utility functions.
+ */
+
 const DEBUG_TAG = '[SW]';
 
 /* Check if service workers are supported. Register service worker if found. */

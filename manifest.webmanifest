@@ -10,13 +10,13 @@
     "short_name": "PWA",
     "display": "standalone",
     "theme_color": "#03A9F4",
-    "background_color": "#FFFFFF",
+    "background_color": "#03A9F4",
     "orientation": "any",
     "scope": "./",
     "start_url": "./",
     "icons": [
         {
-            "src": "icons/icon512-maskable.png",
+            "src": "icons/icon-512-maskable.png",
             "sizes": "512x512",
             "purpose": "maskable",
             "type": "image/png"
