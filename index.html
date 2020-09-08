@@ -31,11 +31,25 @@
 
 <body>
   <div class="app-container">
-    <header class="header">
-      <h1><span role="img" aria-label="App emoji logo">📦</span>PWA Boilerplate</h1>
+    <header class="app-header">
+      <h1>
+        <span role="img" aria-label="App emoji logo">📦</span>
+        <span class="app-title">PWA Boilerplate</span></h1>
+      <nav>
+        <ul class="app-nav__ul">
+          <li class="app-nav__li"><a href="">Github Repo</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="app-content">
-      <p>This project contains a basic starting point for a Progressive Web Application.</p>
+      <section>
+        <p>This project serves as a starting point for a Progressive Web Application.</p>
+        <p>It is built without any complex frontend frameworks, to illustrate that you don't necessarily need those to
+          get a PWA up and running.</p>
+        <p>To get a taste of the action, try playing around with notifications below!
+          <span role="img" aria-label="Magic emoji">✨</span>
+        </p>
+      </section>
       <section>
         <h3>Notifications</h3>
         <p>Write a text below and see it appear in a notification.</p>
@@ -46,6 +60,11 @@
         <h3>Push messages</h3>
         <p>To test out push messages locally, open devtools (F12) and navigate to the Application tab.</p>
         <p>Click on 'Service Workers' and you will be able to send a push message from the browser.</p>
+      </section>
+      <section>
+        <h3>App-like experience</h3>
+        <p>Using Chrome or Edge? Try installing this app and going offline!</p>
+        <p>PWAs are installable both on mobile 📱 and desktop 🖥</p>
       </section>
     </main>
   </div>
